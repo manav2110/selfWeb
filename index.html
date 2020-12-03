@@ -1,31 +1,30 @@
 
 
 
-
-
-
-
-
 <!DOCTYPE html>
 <html>
 <head>
-
+	<style type="text/css">
+		#dropdown{
+			display: none;
+		}
+	</style>
 	<script type="text/javascript">
-	$(document).ready(function(){
-	$(".dropdown").hide();
-	$("#bar").click(function(){
-		$(".dropdown").toggle();
-		});
-	$(".dropdown").mouseleave(function(){
-		$(".dropdown").hide();
-	});
-	$("li").click(function(){
-		$(".dropdown").hide();
-	});
+		var dropDown = document.getElementById('dropdown');
+		var bar = document.getElementById('bar');
+		dropdown.style.display = 'none';
+		function display(){
+			if(dropdown.style.display = 'none'){
+				dropdown.style.display = 'block';
+			}
+			if(dropdown.style.display = 'block';){
+				dropdown.style.display = 'none';
+			}
+		}
+
+	</script>
 	
 
-});
-</script>
 	<meta charset="utf-8" name="viewport" content="width=device-width,initial-scale-1.0">
 	<title></title>
 	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
@@ -45,9 +44,9 @@
 <body>
 	<div class="topnav">
 		<div class="bar">
-			<i class="fa fa-bars" id="bar"></i>
+			<i class="fa fa-bars" id="bar" onclick="display();"></i>
 		</div>
-		<div class="dropdown">
+		<div class="dropdown" id="dropdown">
 				<ul>
 					<li><a href="#about"><i class="fa fa-user" id="1about" style="color: white;padding-left: 12px;padding-bottom: 20px;"><span>&nbsp&nbsp&nbsp&nbsp&nbspAbout me</span></i></a></li>
 					<li><a href="#certifications"><i class="fa fa-graduation-cap" style="color: white;padding-left: 8px;padding-bottom: 18px;padding-top: 8px;"><span>&nbsp&nbsp&nbspCertifications</span></i></a></li>
@@ -365,13 +364,24 @@
 		</footer>
 </body>
 <script type="text/javascript">
-	$(document).ready(function(){
-		$("#ignore").click(function(){
+$(document).ready(function(){
+
+	
+	$(".dropdown").hide();
+	$("#bar").click(function(){
+		$(".dropdown").toggle();
+		});
+	$(".dropdown").mouseleave(function(){
+		$(".dropdown").hide();
+	});
+	$("li").click(function(){
+		$(".dropdown").hide();
+	});
+});
+$("#ignore").click(function(){
 			$(".subscribe").remove();
 				// e.preventDefault();
 		});
-
-	});
 	
 </script>
 </html>
