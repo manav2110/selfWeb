@@ -1979,7 +1979,7 @@ box-shadow: 3px 3px 100px skyblue;
 		animation-name: subscribe;
  		animation-duration: 3s;
   		animation-direction:alternate; 
-  		animation-delay: 2s;
+  		animation-delay: 20s;
    		animation-iteration-count: 1;
 		animation-fill-mode: forwards;
  		border-radius: 30px;
